@@ -1,13 +1,31 @@
-# 🚀 Claude Code for n8n
+# 🚀 Claude Code Enhanced for n8n
 
-**Bring the power of Claude Code directly into your n8n automation workflows!**
+**Bring the power of Claude Code directly into your n8n automation workflows - Enhanced version with AI Agent Tool support!**
 
-Imagine having an AI coding assistant that can analyze your codebase, fix bugs, write new features, manage databases, interact with APIs, and automate your entire development workflow - all within n8n. That's exactly what this node enables.
+> 🆕 **Enhanced Version**: This is an enhanced fork that includes **AI Agent Tool** support, allowing Claude Code to be used by LangChain agents and other AI systems. Install this alongside the base version for additional capabilities.
+
+Imagine having an AI coding assistant that can analyze your codebase, fix bugs, write new features, manage databases, interact with APIs, and automate your entire development workflow - all within n8n. That's exactly what this enhanced node enables.
 
 [![n8n](https://img.shields.io/badge/n8n-community_node-orange.svg)](https://n8n.io/)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Powered-blue.svg)](https://claude.ai/code)
-[![npm](https://img.shields.io/npm/v/@holtweb/n8n-nodes-claudecode.svg)](https://www.npmjs.com/package/@holtweb/n8n-nodes-claudecode)
+[![npm](https://img.shields.io/npm/v/@holtweb/n8n-nodes-claudecode-enhanced.svg)](https://www.npmjs.com/package/@holtweb/n8n-nodes-claudecode-enhanced)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE.md)
+
+## 🔧 Enhanced Nodes Available
+
+This enhanced package provides **two nodes** that you can install alongside any existing Claude Code community node:
+
+### 1. **Claude Code Enhanced** (Regular Node)
+- All standard Claude Code SDK functionality
+- Manual workflow control and execution
+- Full MCP server support
+- Perfect for scheduled tasks and user-triggered workflows
+
+### 2. **Claude Code Enhanced Tool** (AI Agent Tool) 🆕
+- **NEW**: LangChain-compatible tool for AI agents
+- Autonomous code assistance for intelligent agents
+- Automatic tool selection by AI agents
+- Enables complex multi-step development workflows
 
 ## 🌟 What Can You Build?
 
@@ -59,14 +77,14 @@ Empower AI agents with coding capabilities:
 1. Open your n8n instance
 2. Go to **Settings** → **Community Nodes**
 3. Click **Install a community node**
-4. Enter: `@holtweb/n8n-nodes-claudecode`
+4. Enter: `@holtweb/n8n-nodes-claudecode-enhanced`
 5. Click **Install**
 6. Restart n8n when prompted
 
 #### Option 2: Manual Installation
 ```bash
 cd ~/.n8n/nodes
-npm install @holtweb/n8n-nodes-claudecode
+npm install @holtweb/n8n-nodes-claudecode-enhanced
 # Restart n8n
 ```
 
@@ -74,14 +92,14 @@ npm install @holtweb/n8n-nodes-claudecode
 ```bash
 docker run -it --rm \
   -p 5678:5678 \
-  -e N8N_COMMUNITY_NODE_PACKAGES=@holtweb/n8n-nodes-claudecode \
+  -e N8N_COMMUNITY_NODE_PACKAGES=@holtweb/n8n-nodes-claudecode-enhanced \
   -v ~/.n8n:/home/node/.n8n \
   n8nio/n8n
 ```
 
 **Note**: For Docker, you'll need to ensure Claude Code CLI is installed inside the container. Consider creating a custom Dockerfile.
 
-📦 **NPM Package**: [@holtweb/n8n-nodes-claudecode](https://www.npmjs.com/package/@holtweb/n8n-nodes-claudecode)
+📦 **NPM Package**: [@holtweb/n8n-nodes-claudecode-enhanced](https://www.npmjs.com/package/@holtweb/n8n-nodes-claudecode-enhanced)
 
 ## 🎯 Real-World Use Cases
 
@@ -205,7 +223,7 @@ With MCP configuration (`.mcp.json`):
 
 ### Setting Up as a Tool
 
-1. Add the **"Claude Code Tool"** node to your workflow (separate from the regular "Claude Code" node)
+1. Add the **"Claude Code Enhanced Tool"** node to your workflow (separate from the regular "Claude Code Enhanced" node)
 2. Configure the tool's name, description, and parameters
 3. Connect it to your AI agent (LangChain Agent, etc.)
 4. The agent will automatically use Claude Code when it needs to:
@@ -280,7 +298,7 @@ If not installed, see the [Quick Start](#-quick-start) section above.
 ### 2. **Create Your First Workflow**
 1. In n8n, create a new workflow
 2. Add a **Manual Trigger** node (for testing)
-3. Add the **Claude Code** node
+3. Add the **Claude Code Enhanced** node
 4. Configure:
    - **Operation**: Query
    - **Prompt**: "Analyze the code in this directory and suggest improvements"

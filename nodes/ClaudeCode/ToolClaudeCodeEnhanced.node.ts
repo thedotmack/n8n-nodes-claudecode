@@ -8,14 +8,14 @@ import { query } from '@anthropic-ai/claude-code';
 
 export class ToolClaudeCode implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Claude Code Tool',
-		name: 'toolClaudeCode',
+		displayName: 'Claude Code Enhanced Tool',
+		name: 'toolClaudeCodeEnhanced',
 		icon: 'file:claudecode.svg',
 		group: ['transform'],
 		version: 1,
-		description: 'Use Claude Code SDK as a tool for AI agents',
+		description: 'Use Claude Code SDK as a tool for AI agents (Enhanced version with additional features)',
 		defaults: {
-			name: 'Claude Code Tool',
+			name: 'Claude Code Enhanced Tool',
 		},
 		codex: {
 			categories: ['AI'],
