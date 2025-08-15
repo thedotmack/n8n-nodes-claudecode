@@ -109,7 +109,7 @@ export class ToolClaudeCode implements INodeType {
 					{ name: 'Web Search', value: 'WebSearch', description: 'Search the web' },
 					{ name: 'Write', value: 'Write', description: 'Write files' },
 				],
-				default: ['WebFetch', 'TodoWrite', 'WebSearch', 'exit_plan_mode', 'Task'],
+				default: ['WebFetch', 'TodoWrite', 'WebSearch', 'Read', 'Task'],
 				description: 'Select which built-in tools Claude Code is allowed to use during execution',
 			},
 			{
