@@ -3,7 +3,7 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 } from 'n8n-workflow';
-import { DynamicTool } from 'langchain/tools';
+import { DynamicTool } from '@langchain/core/tools';
 import { query } from '@anthropic-ai/claude-code';
 
 export class ToolClaudeCode implements INodeType {
