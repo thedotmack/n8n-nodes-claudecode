@@ -37,6 +37,13 @@ Transform support tickets into code fixes automatically:
 - Update documentation based on common questions
 - Auto-respond with workarounds while fixes are deployed
 
+### 🧠 **AI Agent Integration**
+Empower AI agents with coding capabilities:
+- **LangChain agents** can automatically call Claude Code for development tasks
+- **Multi-step reasoning** with code execution, file operations, and web research
+- **Autonomous debugging** where agents identify and fix issues independently
+- **Natural language to code** with intelligent tool selection
+
 ## ⚡ Quick Start
 
 ### Prerequisites
@@ -186,6 +193,42 @@ With MCP configuration (`.mcp.json`):
   }
 }
 ```
+
+## 🤖 Using as AI Agent Tool
+
+**NEW!** Claude Code can now be used as a **tool** by AI agents in n8n, not just as a regular workflow node.
+
+### What's the Difference?
+
+- **Regular Node**: You add Claude Code to your workflow and control when it executes
+- **AI Agent Tool**: AI agents (like LangChain agents) can automatically call Claude Code when they need coding assistance
+
+### Setting Up as a Tool
+
+1. Add the **"Claude Code Tool"** node to your workflow (separate from the regular "Claude Code" node)
+2. Configure the tool's name, description, and parameters
+3. Connect it to your AI agent (LangChain Agent, etc.)
+4. The agent will automatically use Claude Code when it needs to:
+   - Analyze or write code
+   - Fix bugs
+   - Read/write files
+   - Execute bash commands
+   - And more!
+
+### Example: AI Agent with Claude Code Tool
+```
+Manual Chat Trigger
+  ↓
+LangChain Agent
+  ↓ (tools)
+Claude Code Tool  ←  The agent calls this automatically when needed
+```
+
+**User**: "Please analyze my Python project and suggest improvements"
+
+**Agent**: *Automatically calls Claude Code Tool to examine the codebase and provide detailed recommendations*
+
+This makes Claude Code available to any AI agent in your n8n workflows, enabling more autonomous and intelligent automation!
 
 ## 🔄 Workflow Patterns
 

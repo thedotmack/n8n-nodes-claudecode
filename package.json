@@ -43,11 +43,13 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/ClaudeCode/ClaudeCode.node.js"
+      "dist/nodes/ClaudeCode/ClaudeCode.node.js",
+      "dist/nodes/ClaudeCode/ToolClaudeCode.node.js"
     ]
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "latest"
+    "@anthropic-ai/claude-code": "latest",
+    "langchain": "^0.3.30"
   },
   "devDependencies": {
     "@n8n/n8n-nodes-langchain": "^0.3.0",
