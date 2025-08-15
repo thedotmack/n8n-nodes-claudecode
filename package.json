@@ -50,6 +50,7 @@
     "@anthropic-ai/claude-code": "latest"
   },
   "devDependencies": {
+    "@n8n/n8n-nodes-langchain": "^0.3.0",
     "@types/node": "^22.13.10",
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",
