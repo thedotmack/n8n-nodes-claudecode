@@ -44,7 +44,7 @@
       },
       "id": "generate-docs",
       "name": "Generate Documentation",
-      "type": "@holtweb/n8n-nodes-claudecode.claudeCode",
+      "type": "@holtweb/n8n-nodes-claudecode-enhanced.claudeCodeEnhanced",
       "typeVersion": 1,
       "position": [450, 300]
     },
@@ -65,7 +65,7 @@
       },
       "id": "create-diagrams",
       "name": "Create Architecture Diagrams",
-      "type": "@holtweb/n8n-nodes-claudecode.claudeCode",
+      "type": "@holtweb/n8n-nodes-claudecode-enhanced.claudeCodeEnhanced",
       "typeVersion": 1,
       "position": [650, 300]
     },

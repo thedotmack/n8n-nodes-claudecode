@@ -1,7 +1,7 @@
 {
-  "name": "@holtweb/n8n-nodes-claudecode",
+  "name": "@holtweb/n8n-nodes-claudecode-enhanced",
   "version": "0.2.1",
-  "description": "n8n node for Claude Code SDK integration with MCP support",
+  "description": "Enhanced n8n node for Claude Code SDK integration with MCP support and AI agent tool",
   "keywords": [
     "n8n-community-node-package",
     "n8n",
@@ -43,13 +43,16 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "nodes": [
-      "dist/nodes/ClaudeCode/ClaudeCode.node.js"
+      "dist/nodes/ClaudeCode/ClaudeCodeEnhanced.node.js",
+      "dist/nodes/ClaudeCode/ToolClaudeCodeEnhanced.node.js"
     ]
   },
   "dependencies": {
-    "@anthropic-ai/claude-code": "latest"
+    "@anthropic-ai/claude-code": "latest",
+    "langchain": "^0.3.30"
   },
   "devDependencies": {
+    "@n8n/n8n-nodes-langchain": "^0.3.0",
     "@types/node": "^22.13.10",
     "@typescript-eslint/parser": "~8.32.0",
     "eslint": "^8.57.0",

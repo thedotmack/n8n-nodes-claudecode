@@ -40,7 +40,7 @@
       },
       "id": "analyze-and-fix",
       "name": "Analyze & Fix Issue",
-      "type": "@holtweb/n8n-nodes-claudecode.claudeCode",
+      "type": "@holtweb/n8n-nodes-claudecode-enhanced.claudeCodeEnhanced",
       "typeVersion": 1,
       "position": [450, 300]
     },
@@ -60,7 +60,7 @@
       },
       "id": "run-tests",
       "name": "Run Tests",
-      "type": "@holtweb/n8n-nodes-claudecode.claudeCode",
+      "type": "@holtweb/n8n-nodes-claudecode-enhanced.claudeCodeEnhanced",
       "typeVersion": 1,
       "position": [650, 300]
     },

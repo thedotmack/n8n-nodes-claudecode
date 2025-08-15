@@ -35,7 +35,7 @@
       },
       "id": "claude-analyzer",
       "name": "Analyze & Fix Bug",
-      "type": "@holtweb/n8n-nodes-claudecode.claudeCode",
+      "type": "@holtweb/n8n-nodes-claudecode-enhanced.claudeCodeEnhanced",
       "typeVersion": 1,
       "position": [450, 300]
     },
