@@ -9,8 +9,8 @@ import { query, type SDKMessage } from '@anthropic-ai/claude-code';
 
 export class ClaudeCode implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'Claude Code',
-		name: 'claudeCode',
+		displayName: 'Claude Code Enhanced',
+		name: 'claudeCodeEnhanced',
 		icon: 'file:claudecode.svg',
 		group: ['transform'],
 		version: 1,
@@ -18,7 +18,7 @@ export class ClaudeCode implements INodeType {
 		description:
 			'Use Claude Code SDK to execute AI-powered coding tasks with customizable tool support',
 		defaults: {
-			name: 'Claude Code',
+			name: 'Claude Code Enhanced',
 		},
 		inputs: [{ type: NodeConnectionType.Main }],
 		outputs: [{ type: NodeConnectionType.Main }],

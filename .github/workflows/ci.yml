@@ -62,6 +62,6 @@ jobs:
           mkdir test-install
           cd test-install
           npm init -y
-          npm install ../holtweb-n8n-nodes-claudecode-*.tgz
+          npm install ../holtweb-n8n-nodes-claudecode-enhanced-*.tgz
           # Verify the package was installed
-          npm list @holtweb/n8n-nodes-claudecode
+          npm list @holtweb/n8n-nodes-claudecode-enhanced
